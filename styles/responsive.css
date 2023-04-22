@@ -29,6 +29,10 @@
     .form textarea {
         width: 100%;
     }
+
+    .footer-middle {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -43,6 +47,22 @@
 
     .middle-section-tiles .tile {
         max-width: unset;
+    }
+
+    .subscribe {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .footer-middle {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links {
+        flex-direction: row;
+        gap: 20px;
     }
 }
 
@@ -59,6 +79,16 @@
 
     .form-container {
         display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    #main-section .main-section-content {
+        padding: 0 50px;
+    }
+
+    .footer-top {
         flex-direction: column;
     }
 }

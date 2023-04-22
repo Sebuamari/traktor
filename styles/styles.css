@@ -2,7 +2,8 @@
     color: #FFFFFF;
 }
 
-button:hover {
+button:hover,
+.input-container i {
     cursor: pointer;
     transform: scale(1.01);
 }
@@ -470,4 +471,106 @@ header {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 24px;
+}
+
+footer {
+    background-color: #191A19;
+    padding: 50px 120px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-top img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-top .subscribe label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-container input {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-container i {
+    position: relative;
+    left: -10px;
+    z-index: 1;
+}
+
+
+.footer-top .subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-middle {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 27px;
+}
+
+.footer-middle div p:first-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+
+.footer-middle div p:not(:first-child) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links li {
+    margin-bottom: 4px;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-links a:not(:last-child) {
+    margin-right: 20px;
 }
