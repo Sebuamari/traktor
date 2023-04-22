@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 1350px) {
+    .burger-button {
+        display: block;
+    }
+
+    .header-right {
+        display: none;   
+    }
+}
+
+@media (max-width: 720px) {
+    #main-section .main-section-content {
+        padding: 0 50px;
+    }
+}
