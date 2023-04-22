@@ -1,6 +1,12 @@
-@media (max-width: 1000px) {
-    .header-nav {
-        display: none;
+@media (max-width: 1750px) {
+    .middle-section-tiles {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .section-header {
+        flex-direction: column;
     }
 }
 
@@ -11,6 +17,33 @@
 
     .header-right {
         display: none;   
+    }
+}
+
+@media (max-width: 1200px) {
+    #middle-section {
+        padding: 57px;
+    }
+
+    .middle-section-tiles {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: unset;
+    }
+
+    .middle-section-tiles .tile {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section-header .inner-nav ul li {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-nav {
+        display: none;
     }
 }
 

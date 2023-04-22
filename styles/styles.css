@@ -2,6 +2,11 @@
     color: #FFFFFF;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -18,7 +23,7 @@ header {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .header-nav ul li a,
@@ -166,4 +171,143 @@ header {
 .main-section-content .buttons a:first-child {
     background: #FF7420;
     color: #FFFFFF;
+}
+
+#middle-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1095px;
+    width: 100vw;
+    background-color:  #FF7420;
+    padding: 57px 111px;
+}
+
+.middle-section-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: calc((100% - 3*485px)/2);
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header,
+.section-header .inner-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    color: #191A19;
+}
+
+.middle-section-tiles .tile {
+    max-width: 485px;
+    height: 613px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tile img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.tile .tile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: -200%;
+    height: 95%;
+    z-index: 2;
+}
+
+.tile-content p:first-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+
+.tile-content p:last-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.effect {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: -100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.08%, #000000 100%);
+}
+
+.inner-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
+
+.inner-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.active a {
+    color: #191A19;
+}
+
+.inner-nav ul li:hover a {
+    color: #191A19;
+}
+
+.active::after,
+.inner-nav ul li:hover:after{
+    content: "";
+    width: 90%;
+    border-bottom: 3px solid #191A19;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: none;
+    color: #191A19;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.button-container button i {
+    margin-left: 15px;
 }
