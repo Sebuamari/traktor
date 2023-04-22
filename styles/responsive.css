@@ -18,6 +18,17 @@
     .header-right {
         display: none;   
     }
+
+    .name-and-email-inputs,
+    .phone-and-service-inputs {
+        flex-direction: column;
+    }
+
+    .form input,
+    .form select,
+    .form textarea {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -44,6 +55,11 @@
 @media (max-width: 1000px) {
     .header-nav {
         display: none;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
