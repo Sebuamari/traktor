@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1750px) {
     .middle-section-tiles {
         gap: 20px;
@@ -6,7 +13,10 @@
 
 @media (max-width: 1550px) {
     .section-header {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -21,7 +31,10 @@
 
     .name-and-email-inputs,
     .phone-and-service-inputs {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .form input,
@@ -31,6 +44,7 @@
     }
 
     .footer-middle {
+        -ms-grid-columns: 2fr 1fr 1fr 1fr;
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }
 }
@@ -41,8 +55,25 @@
     }
 
     .middle-section-tiles {
+        -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        -ms-grid-columns: unset;
         grid-template-columns: unset;
+    }
+
+    .middle-section-tiles > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .middle-section-tiles > *:nth-child(2) {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .middle-section-tiles > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
     }
 
     .middle-section-tiles .tile {
@@ -50,18 +81,31 @@
     }
 
     .subscribe {
-        flex-direction: column !important;
-        align-items: flex-start;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     .footer-middle {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 10px;
     }
 
     .links {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         gap: 20px;
     }
 }
@@ -78,8 +122,13 @@
     }
 
     .form-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -89,7 +138,10 @@
     }
 
     .footer-top {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
